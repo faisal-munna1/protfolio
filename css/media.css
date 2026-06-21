@@ -1,7 +1,4 @@
 @media(min-width:1200px) and (max-width:1399px){
-    .banner_typing {
-        font-size: 56px;
-    }
     .content .ban-text {
         margin-right: 115px;
         padding-bottom: 150px;
@@ -417,6 +414,7 @@
      .footer-wrapper::after{
         width: 80%;
      }
+
 }
 @media(min-width:576px) and (max-width:767px){
     #demo{
@@ -464,7 +462,7 @@
         text-align: center;
     }
     .content h1 {
-        font-size: 60px;
+        font-size: 50px;
     }
     .typing .a{
         font-size: 50px;
@@ -651,7 +649,7 @@
         margin-bottom: 10px;
     }
     .typing .a{
-        font-size: 30px;
+        font-size: 15px;
     }
     .banner_typing{
         font-size: 24px;
@@ -1025,3 +1023,63 @@
         margin-top: 15px;
     }
 }
+
+
+/* ==========================================================================
+   Custom Responsive Media Queries
+   ========================================================================== */
+
+/* Tablet & Mobile Screens */
+@media (max-width: 991px) {
+    .class-md-space {
+        margin-top: 0px; /* Aligns second list properly on tablet stack */
+    }
+}
+
+/* Small Mobile Screens Only */
+@media (max-width: 767px) {
+    #membership {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .membership-content h4 {
+        font-size: 28px;
+        line-height: 42px;
+    }
+    .membership-experience-list {
+        padding-left: 20px;
+        margin-right: 0px;
+    }
+    .membership-single-list {
+        padding: 30px 25px;
+        margin-top: 30px;
+    }
+    .membership-head {
+        flex-direction: column; /* Stacks header text and date on small mobile */
+        gap: 15px;
+    }
+    .membership-title h4 {
+        font-size: 18px;
+        line-height: 28px;
+        padding-right: 0;
+    }
+    .membership-text p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    /* Reposition timeline indicators slightly closer for mobile viewports */
+    .membership-text::after {
+        width: 15px;
+        left: -40px;
+    }
+    .membership-head::after {
+        left: -53px;
+    }
+
+    section h2 ,h3 {
+    font-size: 30px !important;
+    line-height: 50px !important;
+}
+}/* Membership style section */
+
+

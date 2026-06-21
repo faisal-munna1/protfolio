@@ -16,82 +16,67 @@ $(function(){
   $('.progress0').rProgressbar({
     percentage: 100,
     duration: 2000,
-    height: '10px',
+    height: '15px',
     width: '97%',
   });
   $('.progress1').rProgressbar({
     percentage: 95,
     duration: 2000,
-    height: '10px',
+    height: '15px',
     width: '97%',
   });
   $('.progress2').rProgressbar({
     percentage: 60,
     duration: 2000,
-    height: '10px',
+    height: '15px',
     width: '97%',
   });
   $('.progress3').rProgressbar({
     percentage: 70,
     duration: 2000,
-    height: '10px',
+    height: '15px',
     width: '97%',
   });
   $('.progress4').rProgressbar({
     percentage: 90,
     duration: 2000,
-    height: '10px',
+    height: '15px',
     width: '97%',
   });
 
 
-//progress bar2
-  $('.progress00').rProgressbar({
-    percentage: 85,
-    duration: 2000,
-    height: '10px',
-    width: '97%',
-  });
-  $('.progress01').rProgressbar({
-    percentage: 80,
-    duration: 2000,
-    height: '10px',
-    width: '97%',
-  });
-  $('.progress02').rProgressbar({
-    percentage: 90,
-    duration: 2000,
-    height: '10px',
-    width: '97%',
-  });
-  $('.progress03').rProgressbar({
-    percentage: 75,
-    duration: 2000,
-    height: '10px',
-    width: '97%',
-  });
-  $('.progress04').rProgressbar({
-    percentage: 70,
-    duration: 2000,
-    height: '10px',
-    width: '97%',
-  });
 //mixit-up
   var containerEl = document.querySelector('.mixit-up');
   var mixer = mixitup(containerEl);
 
   var mixer = mixitup('.mixit-up');
 
-//slick-slider
-$('.sliader-main').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  pauseOnHover:false,
-  arrows: true,
-  prevArrow:".previous",
-  nextArrow:".next",
-  dots:true,
+// //slick-slider
+// $('.sliader-main').slick({
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   autoplay: true,
+//   pauseOnHover:false,
+//   arrows: true,
+//   prevArrow:".previous",
+//   nextArrow:".next",
+//   dots:true,
+// });
+
+
+$(document).ready(function(){
+  $('.testimonial-fade-init').slick({
+    dots: true,                
+    infinite: true,
+    speed: 300,                
+    fade: true,                
+    cssEase: 'linear',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: $('.slick-prev-btn'), 
+    nextArrow: $('.slick-next-btn'), 
+    appendDots: $('.testimonial-wrapper .container'),
+  });
 });
 
 //form-validation
