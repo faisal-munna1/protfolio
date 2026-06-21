@@ -997,3 +997,31 @@
         display: none;
     }
 }
+
+@media (max-width: 767.98px) {
+    .timeline-center-wrapper::before {
+        left: 20px;
+        transform: none;
+    }
+    .timeline-item {
+        width: 100% !important;
+        left: 0 !important;
+        padding-left: 45px !important;
+        padding-right: 0 !important;
+    }
+    .timeline-item::after {
+        left: 10px !important;
+        right: auto !important;
+    }
+    .timeline-item::before {
+        left: 20px !important;
+        right: auto !important;
+        width: 25px !important;
+    }
+    .edu-head {
+        flex-direction: column;
+    }
+    .date {
+        margin-top: 15px;
+    }
+}
